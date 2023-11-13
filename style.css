@@ -151,6 +151,17 @@ footer{
   padding: 30px;
   clear:left;
 }
+
+.mapping {
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+#map {
+  height: 600px;
+  width: 100%;
+  background-color: white;
+}
   
   
  
