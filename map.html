@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Main</title>
+  <title>Map</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <script async src="script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?AIzaSyDUYyThilFCWfeFerVaGcbEIXotuGBE1Hw&callback=initMap"></script>
 </head>
 
 <body>
@@ -21,24 +23,17 @@
 	  </ul>
 	</nav>
   </header>
+  
   <div class="site-title-wrap">
-    <h1 class="site-title">Welcome!</h1>
+    <h1 class="site-title">Illinois Institute of Technology</h1>
+    <hr class="spacing">
+      <div id="map"></div>
+      <p>Address: 10 West 35th Street, Chicago, IL 60616</p>
+    <hr class="spacing">
+    <button id="button">
+      <a href="https://www.iit.edu/">Homepage</a>
+    </button>
   </div>
-  <h3>Name: Seung-A Ham</h3>
-  <p>Born: New Zealand </p>
-  <img id="img1" src="images/newzealand.png" alt="new zealand flag">
-  <p>Live: Korea </p>
-  <img id="img2" src="images/korea.png" alt="korea flag">
-  <p>My favorite sports: swimming, skiing</p>
-  <img id="img3" src="images/swim.png" alt="a picture of a person swimming">
-  <img id="img4" src="images/ski.png" alt="a picture of a person skiing">
-  <div class="site-title-wrap">
-    <h1 class="site-title">Introduce myself</h1>
-  </div>
-  <p>Hello, I am a visiting student from Korea to the United States! I live in msv now.</p>
-  <p>I came to IIT after finishing the first semester of my fourth year in Korea, so this fall semester is my last semester.</p>
-  <p>I am not fluent in English, but I love making new friends.</p>
-  <P>I hope I can have a good semester.</P>
   <footer>
     <p>Copyright © Seung-A Ham All rights reserved.</p>
     <p>Contact: sham1@hawk.iit.edu</p>
