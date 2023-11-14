@@ -162,6 +162,19 @@ footer{
   width: 100%;
   background-color: white;
 }
+
+#button {
+  background: rgb(255, 255, 255);
+  font-family:'Courier New', Courier, monospace;
+  font-size: 20px;
+  width: 30%;
+  margin-left: 33.3%;
+  margin-right:33.3%;
+  margin-top: 5%;
+  border: 0;
+}
   
-  
+hr {
+  border: 5px solid rgb(243, 252, 211);
+}  
  
