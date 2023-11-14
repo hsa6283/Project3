@@ -1,51 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Main</title>
+  <link rel="shortcut icon" type="image/x-icon" href="image/sad.ico" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <script async src="script.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <title>Main</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script type="module" src="script.js"></script>
 </head>
 
-<body>
-  <header>
-    <nav>
-	    <ul>
-		    <li><a href="index.html">Main</a></li>
-	      <li><a href="resume.html">Resume</a></li>
-        <li><a href="interests.html">interests</a></li>
-        <li><a href="map.html">Map</a></li>
-	    </ul>
-	  </nav>
-	</header>
-	<div class="site-title-wrap">
-    <h1 class="site-title">Welcome!</h1>
+<body class="main_page">
+  <div class="header">
+  <ul>
+    <li id="onpage"><a href="index.html">Main Page</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="interests.html">My interests</a></li>
+    <li><a href="map.html">map</a></li>
+  </ul>
   </div>
-	<h3>Name: Seung-A Ham</h3>
-  <p>Born: New Zealand </p>
-  <img id="img1" src="images/newzealand.png" alt="new zealand flag">
-  <p>Live: Korea </p>
-  <img id="img2" src="images/korea.png" alt="korea flag">
-  <p>My favorite sports: swimming, skiing</p>
-  <img id="img3" src="images/swim.png" alt="a picture of a person swimming">
-  <img id="img4" src="images/ski.png" alt="a picture of a person skiing">
-	<div class="site-title-wrap">
-    <h1 class="site-title">Introduce myself</h1>
-  </div>
-	<p>Hello, I am a visiting student from Korea to the United States! I live in msv now.</p>
-	<p>I came to IIT after finishing the first semester of my fourth year in Korea, so this fall semester is my last semester.</p>
-  <p>I am not fluent in English, but I love making new friends.</p>
-  <P>I hope I can have a good semester.</P>
+  
+  <h1 id = "text"></h1>
+  <section class="card">
+  <h3> Welcome! </h3>
+  <ul>
+    <li>Name: Seung-A Ham</li>
+    <li>Hello, I am a visiting student from Korea to the United States! I live in msv now.</li>
+    <li>I came to IIT after finishing the first semester of my fourth year in Korea, so this fall semester is my last semester.</li>
+    <li>I am not fluent in English, but I love making new friends.</li>
+    <li>I hope I can have a good semester.</li>
+  </ul>
+  </section>
+  
+  <section class="card">
+    <h3>Born In NewZealand</h3>
+    <ul>
+      <li>NewZealand Flag</li>
+      <img id="img1" src="images/newzealand.png" alt="new zealand flag" width= "300">
+    </ul>
+  </section>
+  
+  <section class="card">
+    <h3>Live In Korea</h3>
+    <ul>
+      <li>Republic of Korea Flag</li>
+      <img id="img2" src="images/korea.png" alt="korea flag" width= "300">
+    </ul>
+  </section>
+ 
+  <section class="card">
+    <div id="slider">
+    <h3>My favorite sports: </h3>
+    <input checked="" type="radio" name="slider" id="slide1">
+	  <input type="radio" name="slider" id="slide2">
+	  <div id="slides">
+        <div id="overflow">
+          <div class="inner">
+            <p>swimming</p>
+            <img id="img3" src="images/swim.png" alt="a picture of a person swimming" width= "300">
+            <p>skiing</p>
+            <img id="img4" src="images/ski.png" alt="a picture of a person skiing" width= "300">
+          </div>
+        </div>
+      </div>
+    <label for="slide1"></label>
+    <label for="slide2"></label>
+    </div>
+  </section>
+
   <footer>
     <p>Copyright © Seung-A Ham All rights reserved.</p>
     <p>Contact: sham1@hawk.iit.edu</p>
   </footer>
 </body>
 </html>
-
 	  
   
   
