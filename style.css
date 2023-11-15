@@ -327,7 +327,6 @@ video {
   body {  
 	  font-size: 70%;
 	  width: 480px;
-	  background-image: url("../image/small_background.png");
 	  background-size: cover;
 	  background-attachment: fixed;
     }
