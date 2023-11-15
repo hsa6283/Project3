@@ -3,7 +3,7 @@
 }
 
 h1{
-  font-family: 'Monoton', cursive;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .name {
@@ -94,11 +94,7 @@ section{
 }
 
 .header ul li:hover{ /*눌렀을때 그림자*/
-  background-color: #252525;
-}
-
-#onpage{
-  background-color: #000;
+  background-color: #797979;
 }
 
 body{
@@ -124,11 +120,6 @@ body{
   width: 25px;
   float: left;
   margin-right: 10px;
-}
-
-#linked{
-  color: blue;
-  text-decoration: underline;
 }
 
 .card {
@@ -158,11 +149,6 @@ video {
   width: 100%;
   top: 0;
   left: 0;
-}
-
-.audio-container {
-  display: flex;
-  margin-bottom: 30px;
 }
 
 .video-container:after {
@@ -244,7 +230,7 @@ video {
 }
 
 .resume_page h1{
-  font-family: 'Monoton', cursive;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 70px 0px 0px 0px;
   color: black;
   margin: auto;
@@ -367,22 +353,22 @@ video {
   .resume_page #resume_pic{
 	width: 40%;
   }
-  .playlist_page h1{
+  .interests_page h1{
 	font-size: 22px;
   }
-  .playlist_page h2{
+  .interests_page h2{
 	font-size: 18px;
   }
-  .playlist_page h3{
+  .interests_page h3{
 	font-size: 14px;
   }
-  .playlist_page h4{
+  .interests_page h4{
 	font-size: 10px;
   }
-  .playlist_page p{
+  .interests_page p{
 	font-size: 12px;
   }
-  .playlist_page iframe {
+  .interests_page iframe {
 	width: 340px !important;
 	height: 240px !important;
   }
@@ -468,8 +454,7 @@ label {
 }
 
 #slide1:checked ~ label[for="slide1"],
-#slide2:checked ~ label[for="slide2"],
-#slide3:checked ~ label[for="slide3"] {
+#slide2:checked ~ label[for="slide2"] {
   background: #333;
 }
 
