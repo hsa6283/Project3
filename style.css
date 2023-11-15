@@ -223,14 +223,14 @@ video {
   width: 70%;
   padding-bottom: 3%;
 }
-
+/*
 .resume_page h1{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 70px 0px 0px 0px;
   color: black;
   margin: auto;
 }
-
+*/
 .resume_page h2 {
   color: brown;
   text-decoration: underline;
@@ -254,12 +254,12 @@ video {
 .resume_page div {
   border-radius: 5px;
 }
-
+/*
 .resume_page li {
   font-family: 'Cormorant Garamond';
   color: rgb(100,20,20);
 }
-
+*/
 .resume_page p{
   font-size: 16px;
   padding: 10px 0px 15px 0px;
@@ -373,12 +373,33 @@ video {
 	  height: 280px;
   }
 }
-
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.resume_text {
+  font-size: 40px;
+  background-image: linear-gradient(100deg, #FF0000, #ff8800, #fff200, #15ff00, #0088ff, #000982, #9500ff);
+  font-weight: bold;
+  color: transparent;
+  background-size: 1000% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: rainbow 2s linear infinite;
+}
 
 @media screen and (min-width: 801px) {
 
 #slider {
   margin: 0 auto;
+  margin-top: 80px;
 }
 
 #overflow {
