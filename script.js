@@ -1,4 +1,3 @@
-// Google Map
 function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), {
       center: { lat: 41.83499522155751, lng: -87.62702776810768 },
@@ -11,11 +10,11 @@ function initMap() {
     var addCircle = new google.maps.Circle({
       center: { lat: 41.83499522155751, lng: -87.62702776810768 },
       radius:100,
+      fillColor: "#00FF00",
+      fillOpacity: 0.5,
       strokeColor: "#00FF00",
       strokeOpacity: 0.8,
       strokeWeight: 2,
-      fillColor: "#00FF00",
-      fillOpacity: 0.5,
       map: map,
     });
     var infowindow = new google.maps.InfoWindow({
@@ -29,13 +28,13 @@ function initMap() {
   var array = string.split("");
   var timer;
 
-function frameLooper () {
-	if (array.length > 0) {
-		document.getElementById("text").innerHTML += array.shift();
-	} else {
-		clearTimeout(timer);
-			}
-	loopTimer = setTimeout('frameLooper()',70);
+  function frameLooper() {
+  if (array.length > 0) {
+    document.getElementById("text").innerHTML += array.shift();
+    timer = setTimeout(frameLooper, 70);
+  } else {
+    clearTimeout(timer);
   }
-frameLooper();
-  
+  }
+
+  frameLooper();
